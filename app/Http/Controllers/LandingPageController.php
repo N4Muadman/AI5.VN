@@ -127,7 +127,7 @@ class LandingPageController extends Controller
         }
 
         // Gửi email với attachments
-        Mail::to('monster2k28@gmail.com')->send(
+        Mail::to('admin@hotrodoan.vn')->send(
             new CourseRegistrationMail($request->all(), $landingPage, $attachmentPaths)
         );
 
