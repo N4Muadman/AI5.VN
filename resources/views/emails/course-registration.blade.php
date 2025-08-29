@@ -136,13 +136,13 @@
 
     <div class="content">
         <!-- Thông tin khóa học -->
-        <div class="course-info">
-            <div class="course-title"><a href="{{route('landing-page', $landingPage->slug)}}">{{ $landingPage->title ?? 'Khóa học' }}</a></div>
-            @if(isset($landingPage->description))
-                <p>{{ $landingPage->description }}</p>
-            @endif
+        <div class="info-section">
+            <h3>Thông tin khóa học</h3>
 
-
+            <div class="info-row">
+                <div class="info-label">Tên khóa học: </div>
+                <div class="info-value"><a href="{{route('landing-page', $landingPage->slug)}}">{{ $landingPage->title ?? 'Khóa học' }}</div>
+            </div>
         </div>
 
         <!-- Thông tin học viên -->
