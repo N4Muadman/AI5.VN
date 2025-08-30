@@ -208,6 +208,58 @@
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(249, 115, 22, 0.2);
         }
+
+        .glass {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Parallax Layers */
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Particle Explosion */
+        /* @keyframes particle-explode {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0) rotate(180deg);
+                opacity: 0;
+            }
+        }
+
+        .exploding {
+            animation: particle-explode 0.5s ease-out forwards;
+        } */
+
+        /* Form Animation */
+        .form-appear {
+            animation: form-materialize 1s ease-out forwards;
+        }
+
+        @keyframes form-materialize {
+            0% {
+                transform: scale(0) rotate(180deg);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1) rotate(0deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
+        
         #button-contact-vr {
             position: fixed;
             bottom: 10px;
@@ -429,7 +481,7 @@
             <h2 class="text-xl md:text-2xl mb-8 text-cyan-300 font-light max-w-4xl mx-auto">
                 Ngừng Spam Link Vô Vọng. Bắt Đầu Xây Dựng <span class="gradient-text font-semibold">'Đế Chế Nội Dung'</span> Bất Bại & Làm Chủ Kỹ Thuật <span class="gradient-text font-semibold">'Link Vô Hình'</span>
             </h2>
-            <button class="glow-button text-white px-12 py-4 rounded-full text-xl font-bold hover:scale-105 transition-all duration-300">
+            <button onclick="showRegistrationForm()" class="glow-button text-white px-12 py-4 rounded-full text-xl font-bold hover:scale-105 transition-all duration-300">
                 🚀 BẮT ĐẦU XÂY DỰNG ĐẾ CHẾ CỦA BẠN
             </button>
         </div>
@@ -541,22 +593,8 @@
                         <h3 class="text-2xl font-bold mb-4 text-green-300">✨ SAU KHI HỌC:</h3>
                         <p class="text-gray-300 mb-6">Link ẩn hoàn toàn trong ảnh, không ai phát hiện được!</p>
 
-                        <div class="demo-image inline-block rounded-xl overflow-hidden" onclick="demoLinkClick()">
-                            <svg width="400" height="250" viewBox="0 0 400 250" class="bg-gradient-to-br from-blue-500 to-purple-600">
-                                <rect width="400" height="250" fill="url(#demoGradient)"/>
-                                <defs>
-                                    <linearGradient id="demoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#3B82F6"/>
-                                        <stop offset="100%" style="stop-color:#8B5CF6"/>
-                                    </linearGradient>
-                                </defs>
-                                <text x="200" y="130" text-anchor="middle" fill="white" font-size="24" font-weight="bold">
-                                    🖼️ Ảnh Sản Phẩm Bình Thường
-                                </text>
-                                <text x="200" y="160" text-anchor="middle" fill="#FBBF24" font-size="16">
-                                    (Click để xem magic!)
-                                </text>
-                            </svg>
+                        <div class="demo-image inline-block rounded-xl overflow-hidden">
+                            <img src="/assets/images/banner-affiliate.jpg" />
                         </div>
 
                         <p class="text-sm text-gray-400 mt-4">
@@ -780,21 +818,11 @@
 
                 <!-- Website Mockup -->
                 <div class="bg-slate-700 rounded-2xl p-8 mb-8 max-w-4xl mx-auto">
-                    <div class="bg-white rounded-lg p-6 mb-4">
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-3 h-3 bg-red-500 rounded-full"></div>
-                            <div class="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                            <div class="w-3 h-3 bg-green-500 rounded-full"></div>
-                        </div>
-                        <div class="bg-gradient-to-r from-orange-500 to-yellow-400 h-20 rounded mb-4"></div>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="bg-gray-200 h-16 rounded"></div>
-                            <div class="bg-gray-200 h-16 rounded"></div>
-                            <div class="bg-gray-200 h-16 rounded"></div>
-                        </div>
+                    <div class="bg-white rounded-lg mb-4">
+                        <img class="rounded-lg" src="/assets/images/banner-affiliate-2.png" />
                     </div>
                     <div class="text-center">
-                        <span class="bg-gradient-to-r from-orange-500 to-yellow-400 text-black px-4 py-2 rounded-full font-bold">WEBSITE AFFILIATE CHUYÊN NGHIỆP</span>
+                        <span class="bg-gradient-to-r from-orange-500 to-yellow-400 text-black px-4 py-2  rounded-full font-bold">WEBSITE AFFILIATE CHUYÊN NGHIỆP</span>
                     </div>
                 </div>
 
@@ -844,17 +872,49 @@
 
                     <p class="text-xl mb-6 text-yellow-300">(Bạn nhận được quà tặng trị giá 3.000.000Đ khi đầu tư chỉ...)</p>
 
-                    <div class="price-highlight text-7xl md:text-8xl font-black mb-8">
+                    <div class="price-highlight text-4xl md:text-8xl font-black mb-8">
                         2.800.000 VNĐ
                     </div>
                 </div>
 
-                <button class="glow-button text-white px-16 py-6 rounded-full text-2xl font-bold hover:scale-105 transition-all duration-300 w-full md:w-auto">
+                <button onclick="showRegistrationForm()" class="glow-button text-white px-10 py-3 md:px-16 md:py-6 rounded-full text-1xl md:text-2xl font-bold hover:scale-105 transition-all duration-300 w-full md:w-auto">
                     🚀 SỞ HỮU CỖ MÁY KIẾM TIỀN NGAY HÔM NAY
                 </button>
             </div>
         </div>
     </section>
+
+    <div id="registrationModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div id="registrationForm" class="glass neon-box rounded-2xl p-8 max-w-md w-full">
+            <h3 class="font-orbitron text-2xl font-bold text-center mb-6 gradient-text">ĐĂNG KÝ NGAY</h3>
+
+            <form class="space-y-4" action="{{route('course-register', $landingPage->id)}}" method="POST">
+                @csrf
+                <div>
+                    <input type="text" placeholder="Họ và tên *" required name="name"
+                           class="w-full bg-black/50 border border-cyan-500/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none">
+                </div>
+
+                <div>
+                    <input type="tel" placeholder="Số điện thoại *" required name="phone"
+                           class="w-full bg-black/50 border border-cyan-500/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none">
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Email *" required name="email"
+                           class="w-full bg-black/50 border border-cyan-500/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none">
+                </div>
+
+                <button type="submit" class="w-full scan-line pulse-btn bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold py-3 rounded-lg transition-all duration-300">
+                    GỬI ĐĂNG KÝ
+                </button>
+            </form>
+
+            <button onclick="closeRegistrationForm()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">
+                ×
+            </button>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @if (session('success'))
@@ -884,6 +944,31 @@
         </script>
     @endif
     <script>
+        function showRegistrationForm() {
+            const button = event.target;
+            const modal = document.getElementById('registrationModal');
+            const form = document.getElementById('registrationForm');
+
+            // Create explosion effect
+            button.classList.add('exploding');
+
+            setTimeout(() => {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                form.classList.add('form-appear');
+            }, 500);
+        }
+
+        function closeRegistrationForm() {
+            const modal = document.getElementById('registrationModal');
+            const form = document.getElementById('registrationForm');
+
+            form.classList.remove('form-appear');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
         // Network Animation
         function createNetworkAnimation() {
             const container = document.getElementById('networkAnimation');
@@ -989,7 +1074,7 @@
 
         // Initialize animations
         document.addEventListener('DOMContentLoaded', () => {
-            createNetworkAnimation();
+            // createNetworkAnimation();
             animateModules();
             animateRoadmap();
 

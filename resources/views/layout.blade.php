@@ -4,7 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI5.VN - Cổng Vũ Trụ Tri Thức</title>
+    <title>@yield('title', 'Khóa Học MMO 5A - 5 Kỹ Năng Kiếm Tiền Online 2025') | AI5.VN</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="🚀 Mở khóa thu nhập thụ động với MMO 5A! Lộ trình DUY NHẤT dạy 5 kỹ năng: Ads, Affiliate, Automation, AI & Application. Bắt đầu sự nghiệp của bạn!" />
+    <meta name="keywords" content="MMO, MMO 5A, kiếm tiền online, khóa học MMO, Affiliate, Automation, AI, Application, Ads" />
+    <meta name="author" content="AI5.VN" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="vi" />
+    <meta name="revisit-after" content="7 days" />
+
+    <!-- Open Graph for Facebook & Social Media -->
+    <meta property="og:title" content="Khóa Học MMO 5A - 5 Kỹ Năng Kiếm Tiền Online 2025 | AI5.VN" />
+    <meta property="og:description" content="🚀 Mở khóa thu nhập thụ động với MMO 5A! Lộ trình DUY NHẤT dạy 5 kỹ năng: Ads, Affiliate, Automation, AI & Application. Bắt đầu sự nghiệp của bạn!" />
+    <meta property="og:image" content="https://ai5.vn/assets/images/mmo5a-banner.jpg" />
+    <meta property="og:url" content="https://ai5.vn/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Khóa Học MMO 5A - 5 Kỹ Năng Kiếm Tiền Online 2025" />
+    <meta name="twitter:description" content="🚀 Mở khóa thu nhập thụ động với MMO 5A! Lộ trình DUY NHẤT dạy 5 kỹ năng: Ads, Affiliate, Automation, AI & Application. Bắt đầu sự nghiệp của bạn!" />
+    <meta name="twitter:image" content="https://ai5.vn/assets/images/mmo5a-banner.jpg" />
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,35 +45,35 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.7/swiper-bundle.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-
 </head>
 
-<body>
+
+<body class="bg-white">
     <!-- Animated Background -->
     <div class="space-bg"></div>
     <div class="stars" id="stars"></div>
 
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 bg-black bg-opacity-20 backdrop-blur-md border-b border-gray-800">
+    <nav class="fixed top-0 w-full z-50 bg-white bg-opacity-90 backdrop-blur-md border-b border-gray-200">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center">
-                    <div class="text-2xl font-bold text-white">
+                    <div class="text-2xl font-bold text-black">
                         <span
                             class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">AI5</span>.VN
                     </div>
                 </div>
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#" class="nav-link text-gray-300 hover:text-white px-3 py-2"
+                        <a href="#" class="nav-link text-gray-800 hover:text-black px-3 py-2"
                             onclick="showPage('home')">Trang Chủ</a>
-                        <a href="#" class="nav-link text-gray-300 hover:text-white px-3 py-2"
+                        <a href="#" class="nav-link text-gray-800 hover:text-black px-3 py-2"
                             onclick="showPage('nontech')">Non-tech Track</a>
-                        <a href="#" class="nav-link text-gray-300 hover:text-white px-3 py-2"
+                        <a href="#" class="nav-link text-gray-800 hover:text-black px-3 py-2"
                             onclick="showPage('tech')">Tech Track</a>
-                        <a href="#" class="nav-link text-gray-300 hover:text-white px-3 py-2"
+                        <a href="#" class="nav-link text-gray-800 hover:text-black px-3 py-2"
                             onclick="showPage('compare')">So Sánh</a>
-                        <a href="#" class="nav-link text-gray-300 hover:text-white px-3 py-2"
+                        <a href="#" class="nav-link text-gray-800 hover:text-black px-3 py-2"
                             onclick="showPage('mentors')">Mentors</a>
                     </div>
                 </div>
@@ -72,12 +94,12 @@
                         class="inline-block bg-gradient-to-r from-cyan-400 to-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold mb-4">
                         NON-TECH TRACK
                     </div>
-                    <h1 class="text-5xl font-bold text-white mb-6">
+                    <h1 class="text-5xl font-bold text-black mb-6">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-yellow-400">
                             Bắt Đầu Từ Con Số 0
                         </span>
                     </h1>
-                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    <p class="text-xl text-gray-800 max-w-3xl mx-auto">
                         Học cách kiếm tiền online bằng các công cụ no-code mạnh mẽ. Không cần biết lập trình, chỉ cần
                         sáng tạo và chiến lược đúng đắn.
                     </p>
@@ -85,13 +107,13 @@
 
                 <!-- Course Modules -->
                 <div class="grid md:grid-cols-2 gap-8 mb-16">
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-cyan-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-cyan-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">🎨</div>
-                            <h3 class="text-2xl font-bold text-white">Module 1: No-Code Mastery</h3>
+                            <h3 class="text-2xl font-bold text-black">Module 1: No-Code Mastery</h3>
                         </div>
                         <div class="progress-bar mb-4"></div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• Webflow, Bubble, Zapier automation</li>
                             <li>• Tạo landing page chuyển đổi cao</li>
                             <li>• Xây dựng funnel bán hàng tự động</li>
@@ -99,13 +121,13 @@
                         </ul>
                     </div>
 
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-yellow-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-yellow-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">📊</div>
-                            <h3 class="text-2xl font-bold text-white">Module 2: Digital Marketing</h3>
+                            <h3 class="text-2xl font-bold text-black">Module 2: Digital Marketing</h3>
                         </div>
                         <div class="progress-bar mb-4"></div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• Facebook Ads & Google Ads mastery</li>
                             <li>• Content marketing & SEO</li>
                             <li>• Email marketing automation</li>
@@ -113,13 +135,13 @@
                         </ul>
                     </div>
 
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-cyan-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-cyan-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">💰</div>
-                            <h3 class="text-2xl font-bold text-white">Module 3: Passive Income</h3>
+                            <h3 class="text-2xl font-bold text-black">Module 3: Passive Income</h3>
                         </div>
                         <div class="progress-bar mb-4"></div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• Dropshipping & Print-on-demand</li>
                             <li>• Digital product creation</li>
                             <li>• Course & membership sites</li>
@@ -127,13 +149,13 @@
                         </ul>
                     </div>
 
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-yellow-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-yellow-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">🤖</div>
-                            <h3 class="text-2xl font-bold text-white">Module 4: AI Tools Mastery</h3>
+                            <h3 class="text-2xl font-bold text-black">Module 4: AI Tools Mastery</h3>
                         </div>
                         <div class="progress-bar mb-4"></div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• ChatGPT for business automation</li>
                             <li>• Midjourney & AI design tools</li>
                             <li>• AI copywriting & content creation</li>
@@ -143,20 +165,20 @@
                 </div>
 
                 <!-- Success Stories -->
-                <div class="bg-gradient-to-r from-cyan-900 to-yellow-900 bg-opacity-30 p-8 rounded-xl">
-                    <h3 class="text-2xl font-bold text-white mb-6 text-center">🏆 Thành Tựu Học Viên Non-tech</h3>
+                <div class="bg-gradient-to-r from-cyan-900 to-yellow-900 bg-opacity-20 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-black mb-6 text-center">🏆 Thành Tựu Học Viên Non-tech</h3>
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-cyan-400">$50K+</div>
-                            <div class="text-gray-300">Doanh thu trung bình sau 6 tháng</div>
+                            <div class="text-3xl font-bold text-cyan-600">$50K+</div>
+                            <div class="text-gray-800">Doanh thu trung bình sau 6 tháng</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-yellow-400">95%</div>
-                            <div class="text-gray-300">Học viên tạo thu nhập đầu tiên</div>
+                            <div class="text-3xl font-bold text-yellow-600">95%</div>
+                            <div class="text-gray-800">Học viên tạo thu nhập đầu tiên</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-cyan-400">24/7</div>
-                            <div class="text-gray-300">Hệ thống tự động hoạt động</div>
+                            <div class="text-3xl font-bold text-cyan-600">24/7</div>
+                            <div class="text-gray-800">Hệ thống tự động hoạt động</div>
                         </div>
                     </div>
                 </div>
@@ -181,12 +203,12 @@
                         class="inline-block bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 tech-font">
                         TECH TRACK
                     </div>
-                    <h1 class="text-5xl font-bold text-white mb-6 tech-font">
+                    <h1 class="text-5xl font-bold text-black mb-6 tech-font">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-400">
                             Nâng Tầm Kỹ Năng Code
                         </span>
                     </h1>
-                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    <p class="text-xl text-gray-800 max-w-3xl mx-auto">
                         Xây dựng sản phẩm công nghệ đột phá với AI, Blockchain và Full-stack Development. Từ ý tưởng đến
                         triển khai thực tế.
                     </p>
@@ -194,20 +216,20 @@
 
                 <!-- Tech Modules -->
                 <div class="grid md:grid-cols-2 gap-8 mb-16">
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-purple-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-purple-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">🤖</div>
-                            <h3 class="text-2xl font-bold text-white tech-font">AI Development</h3>
+                            <h3 class="text-2xl font-bold text-black tech-font">AI Development</h3>
                         </div>
                         <div class="progress-bar-tech mb-4"></div>
-                        <div class="code-snippet p-4 rounded mb-4">
+                        <div class="code-snippet p-4 rounded mb-4 bg-gray-900">
                             <code class="text-cyan-400 text-sm">
                                 import openai<br>
                                 model = GPT4("gpt-4-turbo")<br>
                                 response = model.generate()
                             </code>
                         </div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• Machine Learning & Deep Learning</li>
                             <li>• OpenAI API & Custom GPT models</li>
                             <li>• Computer Vision & NLP</li>
@@ -215,20 +237,20 @@
                         </ul>
                     </div>
 
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-cyan-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-cyan-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">🌐</div>
-                            <h3 class="text-2xl font-bold text-white tech-font">Full-Stack Mastery</h3>
+                            <h3 class="text-2xl font-bold text-black tech-font">Full-Stack Mastery</h3>
                         </div>
                         <div class="progress-bar-tech mb-4"></div>
-                        <div class="code-snippet p-4 rounded mb-4">
+                        <div class="code-snippet p-4 rounded mb-4 bg-gray-900">
                             <code class="text-cyan-400 text-sm">
                                 const app = express()<br>
                                 app.use('/api', routes)<br>
                                 app.listen(3000)
                             </code>
                         </div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• React, Next.js, Node.js</li>
                             <li>• Database design & optimization</li>
                             <li>• Cloud deployment (AWS, Vercel)</li>
@@ -236,20 +258,20 @@
                         </ul>
                     </div>
 
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-purple-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-purple-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">⛓️</div>
-                            <h3 class="text-2xl font-bold text-white tech-font">Blockchain & Web3</h3>
+                            <h3 class="text-2xl font-bold text-black tech-font">Blockchain & Web3</h3>
                         </div>
                         <div class="progress-bar-tech mb-4"></div>
-                        <div class="code-snippet p-4 rounded mb-4">
+                        <div class="code-snippet p-4 rounded mb-4 bg-gray-900">
                             <code class="text-cyan-400 text-sm">
                                 contract Token {<br>
                                 &nbsp;&nbsp;mapping(address => uint) balances;<br>
                                 }
                             </code>
                         </div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• Smart Contract development</li>
                             <li>• DeFi protocols & NFT platforms</li>
                             <li>• Web3 integration & MetaMask</li>
@@ -257,20 +279,20 @@
                         </ul>
                     </div>
 
-                    <div class="bg-gray-900 bg-opacity-50 p-8 rounded-xl border border-cyan-500 border-opacity-30">
+                    <div class="bg-gray-100 bg-opacity-80 p-8 rounded-xl border border-cyan-500 border-opacity-30">
                         <div class="flex items-center mb-4">
                             <div class="text-3xl mr-4">🚀</div>
-                            <h3 class="text-2xl font-bold text-white tech-font">DevOps & Scale</h3>
+                            <h3 class="text-2xl font-bold text-black tech-font">DevOps & Scale</h3>
                         </div>
                         <div class="progress-bar-tech mb-4"></div>
-                        <div class="code-snippet p-4 rounded mb-4">
+                        <div class="code-snippet p-4 rounded mb-4 bg-gray-900">
                             <code class="text-cyan-400 text-sm">
                                 docker build -t app .<br>
                                 kubectl apply -f deploy.yaml<br>
                                 terraform plan
                             </code>
                         </div>
-                        <ul class="text-gray-300 space-y-2">
+                        <ul class="text-gray-800 space-y-2">
                             <li>• Docker & Kubernetes</li>
                             <li>• CI/CD pipelines</li>
                             <li>• Infrastructure as Code</li>
@@ -280,20 +302,20 @@
                 </div>
 
                 <!-- Tech Success Metrics -->
-                <div class="bg-gradient-to-r from-purple-900 to-cyan-900 bg-opacity-30 p-8 rounded-xl">
-                    <h3 class="text-2xl font-bold text-white mb-6 text-center tech-font">⚡ Thành Tựu Học Viên Tech</h3>
+                <div class="bg-gradient-to-r from-purple-900 to-cyan-900 bg-opacity-20 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-black mb-6 text-center tech-font">⚡ Thành Tựu Học Viên Tech</h3>
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-400 tech-font">$100K+</div>
-                            <div class="text-gray-300">Mức lương trung bình</div>
+                            <div class="text-3xl font-bold text-purple-600 tech-font">$100K+</div>
+                            <div class="text-gray-800">Mức lương trung bình</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-cyan-400 tech-font">50+</div>
-                            <div class="text-gray-300">Dự án thực tế hoàn thành</div>
+                            <div class="text-3xl font-bold text-cyan-600 tech-font">50+</div>
+                            <div class="text-gray-800">Dự án thực tế hoàn thành</div>
                         </div>
                         <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-400 tech-font">98%</div>
-                            <div class="text-gray-300">Tỷ lệ có việc làm</div>
+                            <div class="text-3xl font-bold text-purple-600 tech-font">98%</div>
+                            <div class="text-gray-800">Tỷ lệ có việc làm</div>
                         </div>
                     </div>
                 </div>
@@ -314,21 +336,21 @@
         <section class="min-h-screen px-4 pt-24">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
-                    <h1 class="text-5xl font-bold text-white mb-6">
+                    <h1 class="text-5xl font-bold text-black mb-6">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
                             So Sánh Chi Tiết
                         </span>
                     </h1>
-                    <p class="text-xl text-gray-300">Tìm lộ trình phù hợp nhất với mục tiêu và kỹ năng của bạn</p>
+                    <p class="text-xl text-gray-800">Tìm lộ trình phù hợp nhất với mục tiêu và kỹ năng của bạn</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-8">
                     <!-- Non-tech Column -->
                     <div
-                        class="bg-gradient-to-b from-cyan-900 to-yellow-900 bg-opacity-20 p-8 rounded-xl border border-cyan-500 border-opacity-30">
+                        class="bg-gradient-to-b from-cyan-900 to-yellow-900 bg-opacity-10 p-8 rounded-xl border border-cyan-500 border-opacity-30">
                         <div class="text-center mb-8">
                             <div class="text-4xl mb-4">🧠⚙️</div>
-                            <h2 class="text-3xl font-bold text-white mb-2">Non-tech Track</h2>
+                            <h2 class="text-3xl font-bold text-black mb-2">Non-tech Track</h2>
                             <div
                                 class="bg-gradient-to-r from-cyan-400 to-yellow-400 text-black px-4 py-2 rounded-full text-sm font-semibold inline-block">
                                 Bắt Đầu Từ Con Số 0
@@ -337,65 +359,19 @@
 
                         <div class="space-y-6">
                             <div>
-                                <h4 class="text-lg font-semibold text-cyan-400 mb-2">🎯 Đối Tượng Phù Hợp</h4>
-                                <p class="text-gray-300">Người mới bắt đầu, không có kinh nghiệm lập trình, muốn kiếm
+                                <h4 class="text-lg font-semibold text-cyan-600 mb-2">🎯 Đối Tượng Phù Hợp</h4>
+                                <p class="text-gray-800">Người mới bắt đầu, không có kinh nghiệm lập trình, muốn kiếm
                                     tiền online nhanh chóng</p>
                             </div>
 
                             <div>
-                                <h4 class="text-lg font-semibold text-cyan-400 mb-2">⏱️ Thời Gian Học</h4>
-                                <p class="text-gray-300">3-6 tháng để có thu nhập đầu tiên</p>
+                                <h4 class="text-lg font-semibold text-cyan-600 mb-2">⏱️ Thời Gian Học</h4>
+                                <p class="text-gray-800">3-6 tháng để có thu nhập đầu tiên</p>
                             </div>
 
                             <div>
-                                <h4 class="text-lg font-semibold text-cyan-400 mb-2">🛠️ Công Cụ Chính</h4>
-                                <ul class="text-gray-300 space-y-1">
-                                    <li>• Webflow, Bubble, Zapier</li>
-                                    <li>• ChatGPT, Midjourney</li>
-                                    <li>• Facebook Ads, Google Ads</li>
-                                    <li>• Shopify, WordPress</li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <h4 class="text-lg font-semibold text-cyan-400 mb-2">💰 Tiềm Năng Thu Nhập</h4>
-                                <p class="text-gray-300">$2K-$10K/tháng từ thu nhập thụ động</p>
-                            </div>
-
-                            <div>
-                                <h4 class="text-lg font-semibold text-cyan-400 mb-2">🚀 Dự Án Cuối Khóa</h4>
-                                <p class="text-gray-300">Hệ thống kinh doanh online tự động hoàn chỉnh</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Tech Column -->
-                    <div
-                        class="bg-gradient-to-b from-purple-900 to-cyan-900 bg-opacity-20 p-8 rounded-xl border border-purple-500 border-opacity-30">
-                        <div class="text-center mb-8">
-                            <div class="text-4xl mb-4">🔮💻</div>
-                            <h2 class="text-3xl font-bold text-white mb-2 tech-font">Tech Track</h2>
-                            <div
-                                class="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-4 py-2 rounded-full text-sm font-semibold inline-block">
-                                Nâng Tầm Kỹ Năng Code
-                            </div>
-                        </div>
-
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="text-lg font-semibold text-purple-400 mb-2">🎯 Đối Tượng Phù Hợp</h4>
-                                <p class="text-gray-300">Có kiến thức lập trình cơ bản, muốn phát triển sản phẩm công
-                                    nghệ cao</p>
-                            </div>
-
-                            <div>
-                                <h4 class="text-lg font-semibold text-purple-400 mb-2">⏱️ Thời Gian Học</h4>
-                                <p class="text-gray-300">6-12 tháng để thành thạo và có việc làm</p>
-                            </div>
-
-                            <div>
-                                <h4 class="text-lg font-semibold text-purple-400 mb-2">🛠️ Công Cụ Chính</h4>
-                                <ul class="text-gray-300 space-y-1 tech-font">
+                                <h4 class="text-lg font-semibold text-cyan-600 mb-2">🛠️ Công Cụ Chính</h4>
+                                <ul class="text-gray-800 space-y-1 tech-font">
                                     <li>• React, Node.js, Python</li>
                                     <li>• TensorFlow, PyTorch</li>
                                     <li>• Solidity, Web3.js</li>
@@ -404,22 +380,22 @@
                             </div>
 
                             <div>
-                                <h4 class="text-lg font-semibold text-purple-400 mb-2">💰 Tiềm Năng Thu Nhập</h4>
-                                <p class="text-gray-300">$5K-$20K/tháng từ lương và freelance</p>
+                                <h4 class="text-lg font-semibold text-purple-600 mb-2">💰 Tiềm Năng Thu Nhập</h4>
+                                <p class="text-gray-800">$5K-$20K/tháng từ lương và freelance</p>
                             </div>
 
                             <div>
-                                <h4 class="text-lg font-semibold text-purple-400 mb-2">🚀 Dự Án Cuối Khóa</h4>
-                                <p class="text-gray-300">Ứng dụng AI hoặc DeFi platform hoàn chỉnh</p>
+                                <h4 class="text-lg font-semibold text-purple-600 mb-2">🚀 Dự Án Cuối Khóa</h4>
+                                <p class="text-gray-800">Ứng dụng AI hoặc DeFi platform hoàn chỉnh</p>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Decision Helper -->
-                <div class="mt-16 bg-gray-900 bg-opacity-50 p-8 rounded-xl text-center">
-                    <h3 class="text-2xl font-bold text-white mb-6">🤔 Vẫn chưa quyết định?</h3>
-                    <p class="text-gray-300 mb-6">Làm bài quiz nhanh để nhận gợi ý lộ trình phù hợp</p>
+                <div class="mt-16 bg-gray-100 bg-opacity-80 p-8 rounded-xl text-center">
+                    <h3 class="text-2xl font-bold text-black mb-6">🤔 Vẫn chưa quyết định?</h3>
+                    <p class="text-gray-800 mb-6">Làm bài quiz nhanh để nhận gợi ý lộ trình phù hợp</p>
                     <button onclick="startQuiz()"
                         class="bg-gradient-to-r from-pink-500 to-violet-500 text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform">
                         Bắt Đầu Quiz ⚡
@@ -434,33 +410,33 @@
         <section class="min-h-screen px-4 pt-24">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-16">
-                    <h1 class="text-5xl font-bold text-white mb-6">
+                    <h1 class="text-5xl font-bold text-black mb-6">
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
                             Đội Ngũ Mentor
                         </span>
                     </h1>
-                    <p class="text-xl text-gray-300">Học từ những chuyên gia hàng đầu trong lĩnh vực MMO và công nghệ
+                    <p class="text-xl text-gray-800">Học từ những chuyên gia hàng đầu trong lĩnh vực MMO và công nghệ
                     </p>
                 </div>
 
                 <div class="grid md:grid-cols-3 gap-8">
                     <!-- Non-tech Mentors -->
                     <div
-                        class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-cyan-500 border-opacity-30 tilt-card">
+                        class="bg-gray-100 bg-opacity-80 p-6 rounded-xl border border-cyan-500 border-opacity-30 tilt-card">
                         <div class="text-center mb-4">
                             <div
                                 class="w-20 h-20 bg-gradient-to-r from-cyan-400 to-yellow-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                                 👨‍💼
                             </div>
-                            <h3 class="text-xl font-bold text-white">Nguyễn Minh Tuấn</h3>
+                            <h3 class="text-xl font-bold text-black">Nguyễn Minh Tuấn</h3>
                             <div
                                 class="bg-gradient-to-r from-cyan-400 to-yellow-400 text-black px-3 py-1 rounded-full text-xs font-semibold inline-block mt-2">
                                 Non-tech Expert
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm mb-4">7+ năm kinh nghiệm MMO, thu nhập $500K+/năm từ hệ thống
+                        <p class="text-gray-800 text-sm mb-4">7+ năm kinh nghiệm MMO, thu nhập $500K+/năm từ hệ thống
                             tự động</p>
-                        <div class="space-y-2 text-sm text-gray-400">
+                        <div class="space-y-2 text-sm text-gray-600">
                             <div>• Chuyên gia Dropshipping & Affiliate</div>
                             <div>• Founder 3 startup thành công</div>
                             <div>• Mentor 1000+ học viên</div>
@@ -468,21 +444,21 @@
                     </div>
 
                     <div
-                        class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-purple-500 border-opacity-30 tilt-card">
+                        class="bg-gray-100 bg-opacity-80 p-6 rounded-xl border border-purple-500 border-opacity-30 tilt-card">
                         <div class="text-center mb-4">
                             <div
                                 class="w-20 h-20 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                                 👩‍💻
                             </div>
-                            <h3 class="text-xl font-bold text-white tech-font">Sarah Chen</h3>
+                            <h3 class="text-xl font-bold text-black tech-font">Sarah Chen</h3>
                             <div
                                 class="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-3 py-1 rounded-full text-xs font-semibold inline-block mt-2">
                                 AI & Code Master
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm mb-4">Ex-Google AI Engineer, 10+ năm phát triển ML/AI systems
+                        <p class="text-gray-800 text-sm mb-4">Ex-Google AI Engineer, 10+ năm phát triển ML/AI systems
                         </p>
-                        <div class="space-y-2 text-sm text-gray-400 tech-font">
+                        <div class="space-y-2 text-sm text-gray-600 tech-font">
                             <div>• Lead AI tại Google & Meta</div>
                             <div>• 50+ AI projects deployed</div>
                             <div>• PhD Computer Science MIT</div>
@@ -490,21 +466,21 @@
                     </div>
 
                     <div
-                        class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-cyan-500 border-opacity-30 tilt-card">
+                        class="bg-gray-100 bg-opacity-80 p-6 rounded-xl border border-cyan-500 border-opacity-30 tilt-card">
                         <div class="text-center mb-4">
                             <div
                                 class="w-20 h-20 bg-gradient-to-r from-cyan-400 to-yellow-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                                 👨‍🎨
                             </div>
-                            <h3 class="text-xl font-bold text-white">Lê Hoàng Nam</h3>
+                            <h3 class="text-xl font-bold text-black">Lê Hoàng Nam</h3>
                             <div
                                 class="bg-gradient-to-r from-cyan-400 to-yellow-400 text-black px-3 py-1 rounded-full text-xs font-semibold inline-block mt-2">
                                 Non-tech Expert
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm mb-4">Digital Marketing Guru, $2M+ ad spend quản lý thành công
+                        <p class="text-gray-800 text-sm mb-4">Digital Marketing Guru, $2M+ ad spend quản lý thành công
                         </p>
-                        <div class="space-y-2 text-sm text-gray-400">
+                        <div class="space-y-2 text-sm text-gray-600">
                             <div>• Facebook Marketing Partner</div>
                             <div>• 500+ campaigns thành công</div>
                             <div>• Chuyên gia Growth Hacking</div>
@@ -512,20 +488,20 @@
                     </div>
 
                     <div
-                        class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-purple-500 border-opacity-30 tilt-card">
+                        class="bg-gray-100 bg-opacity-80 p-6 rounded-xl border border-purple-500 border-opacity-30 tilt-card">
                         <div class="text-center mb-4">
                             <div
                                 class="w-20 h-20 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                                 👨‍🔬
                             </div>
-                            <h3 class="text-xl font-bold text-white tech-font">David Kim</h3>
+                            <h3 class="text-xl font-bold text-black tech-font">David Kim</h3>
                             <div
                                 class="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-3 py-1 rounded-full text-xs font-semibold inline-block mt-2">
                                 Blockchain Master
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm mb-4">Blockchain Architect, xây dựng 20+ DeFi protocols</p>
-                        <div class="space-y-2 text-sm text-gray-400 tech-font">
+                        <p class="text-gray-800 text-sm mb-4">Blockchain Architect, xây dựng 20+ DeFi protocols</p>
+                        <div class="space-y-2 text-sm text-gray-600 tech-font">
                             <div>• CTO tại Binance Labs</div>
                             <div>• $100M+ TVL protocols</div>
                             <div>• Smart Contract Auditor</div>
@@ -533,21 +509,21 @@
                     </div>
 
                     <div
-                        class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-cyan-500 border-opacity-30 tilt-card">
+                        class="bg-gray-100 bg-opacity-80 p-6 rounded-xl border border-cyan-500 border-opacity-30 tilt-card">
                         <div class="text-center mb-4">
                             <div
                                 class="w-20 h-20 bg-gradient-to-r from-cyan-400 to-yellow-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                                 👩‍💼
                             </div>
-                            <h3 class="text-xl font-bold text-white">Trần Thị Mai</h3>
+                            <h3 class="text-xl font-bold text-black">Trần Thị Mai</h3>
                             <div
                                 class="bg-gradient-to-r from-cyan-400 to-yellow-400 text-black px-3 py-1 rounded-full text-xs font-semibold inline-block mt-2">
                                 Business Expert
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm mb-4">Serial Entrepreneur, 5 exits thành công, tổng giá trị
+                        <p class="text-gray-800 text-sm mb-4">Serial Entrepreneur, 5 exits thành công, tổng giá trị
                             $50M+</p>
-                        <div class="space-y-2 text-sm text-gray-400">
+                        <div class="space-y-2 text-sm text-gray-600">
                             <div>• Forbes 30 Under 30</div>
                             <div>• Venture Capital Partner</div>
                             <div>• Business Strategy Consultant</div>
@@ -555,21 +531,21 @@
                     </div>
 
                     <div
-                        class="bg-gray-900 bg-opacity-50 p-6 rounded-xl border border-purple-500 border-opacity-30 tilt-card">
+                        class="bg-gray-100 bg-opacity-80 p-6 rounded-xl border border-purple-500 border-opacity-30 tilt-card">
                         <div class="text-center mb-4">
                             <div
                                 class="w-20 h-20 bg-gradient-to-r from-purple-500 to-cyan-400 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">
                                 👨‍🚀
                             </div>
-                            <h3 class="text-xl font-bold text-white tech-font">Alex Rodriguez</h3>
+                            <h3 class="text-xl font-bold text-black tech-font">Alex Rodriguez</h3>
                             <div
                                 class="bg-gradient-to-r from-purple-500 to-cyan-400 text-white px-3 py-1 rounded-full text-xs font-semibold inline-block mt-2">
                                 Full-Stack Master
                             </div>
                         </div>
-                        <p class="text-gray-300 text-sm mb-4">Senior Engineer Netflix, xây dựng systems phục vụ 200M+
+                        <p class="text-gray-800 text-sm mb-4">Senior Engineer Netflix, xây dựng systems phục vụ 200M+
                             users</p>
-                        <div class="space-y-2 text-sm text-gray-400 tech-font">
+                        <div class="space-y-2 text-sm text-gray-600 tech-font">
                             <div>• Netflix Senior SWE</div>
                             <div>• Microservices Architect</div>
                             <div>• Open Source Contributor</div>
@@ -578,23 +554,23 @@
                 </div>
 
                 <!-- Mentorship Benefits -->
-                <div class="mt-16 bg-gradient-to-r from-gray-900 to-gray-800 bg-opacity-50 p-8 rounded-xl">
-                    <h3 class="text-2xl font-bold text-white mb-6 text-center">🎯 Lợi Ích Mentorship</h3>
+                <div class="mt-16 bg-gradient-to-r from-gray-100 to-gray-200 bg-opacity-80 p-8 rounded-xl">
+                    <h3 class="text-2xl font-bold text-black mb-6 text-center">🎯 Lợi Ích Mentorship</h3>
                     <div class="grid md:grid-cols-3 gap-6">
                         <div class="text-center">
                             <div class="text-3xl mb-2">🎯</div>
-                            <h4 class="text-lg font-semibold text-white mb-2">1-on-1 Coaching</h4>
-                            <p class="text-gray-300 text-sm">Hướng dẫn cá nhân hóa theo mục tiêu riêng</p>
+                            <h4 class="text-lg font-semibold text-black mb-2">1-on-1 Coaching</h4>
+                            <p class="text-gray-800 text-sm">Hướng dẫn cá nhân hóa theo mục tiêu riêng</p>
                         </div>
                         <div class="text-center">
                             <div class="text-3xl mb-2">🚀</div>
-                            <h4 class="text-lg font-semibold text-white mb-2">Project Review</h4>
-                            <p class="text-gray-300 text-sm">Feedback chi tiết cho mọi dự án thực tế</p>
+                            <h4 class="text-lg font-semibold text-black mb-2">Project Review</h4>
+                            <p class="text-gray-800 text-sm">Feedback chi tiết cho mọi dự án thực tế</p>
                         </div>
                         <div class="text-center">
                             <div class="text-3xl mb-2">🌐</div>
-                            <h4 class="text-lg font-semibold text-white mb-2">Network Access</h4>
-                            <p class="text-gray-300 text-sm">Kết nối với cộng đồng chuyên gia</p>
+                            <h4 class="text-lg font-semibold text-black mb-2">Network Access</h4>
+                            <p class="text-gray-800 text-sm">Kết nối với cộng đồng chuyên gia</p>
                         </div>
                     </div>
                 </div>
@@ -776,12 +752,12 @@
             const questionElement = document.getElementById('quizQuestion');
 
             questionElement.innerHTML = `
-                <p class="text-lg text-gray-300 mb-4">Câu hỏi ${currentQuestion + 1}/3: ${question.question}</p>
+                <p class="text-lg text-gray-800 mb-4">Câu hỏi ${currentQuestion + 1}/3: ${question.question}</p>
                 <div class="space-y-3">
                     ${question.options.map(option => `
-                                <div class="quiz-option border border-gray-600 p-4 rounded-lg" data-value="${option.value}">
-                                    <div class="font-semibold text-white">${option.text}</div>
-                                    <div class="text-sm text-gray-400">${option.subtext}</div>
+                                <div class="quiz-option border border-gray-400 p-4 rounded-lg" data-value="${option.value}">
+                                    <div class="font-semibold text-black">${option.text}</div>
+                                    <div class="text-sm text-gray-600">${option.subtext}</div>
                                 </div>
                             `).join('')}
                 </div>
@@ -834,16 +810,16 @@
             document.getElementById('quizContent').innerHTML = `
                 <div class="text-center">
                     <div class="text-6xl mb-4">${recommendedTrack === 'nontech' ? '🧠⚙️' : '🔮💻'}</div>
-                    <h3 class="text-3xl font-bold text-white mb-4">Kết Quả Quiz</h3>
+                    <h3 class="text-3xl font-bold text-black mb-4">Kết Quả Quiz</h3>
                     <div class="bg-gradient-to-r ${recommendedTrack === 'nontech' ? 'from-cyan-400 to-yellow-400 text-black' : 'from-purple-500 to-cyan-400 text-white'} px-6 py-3 rounded-xl font-semibold inline-block mb-4">
                         Phù Hợp: ${trackName}
                     </div>
-                    <p class="text-gray-300 mb-8">${trackDescription}</p>
+                    <p class="text-gray-800 mb-8">${trackDescription}</p>
                     <div class="space-y-4">
                         <button onclick="showPage('${recommendedTrack}'); closeQuiz();" class="w-full bg-gradient-to-r ${recommendedTrack === 'nontech' ? 'from-cyan-500 to-yellow-500 text-black' : 'from-purple-500 to-cyan-400 text-white'} px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform">
                             Khám Phá ${trackName} 🚀
                         </button>
-                        <button onclick="closeQuiz()" class="w-full border border-gray-600 text-gray-300 px-8 py-4 rounded-xl hover:bg-gray-800">
+                        <button onclick="closeQuiz()" class="w-full border border-gray-400 text-gray-800 px-8 py-4 rounded-xl hover:bg-gray-100">
                             Đóng
                         </button>
                     </div>
