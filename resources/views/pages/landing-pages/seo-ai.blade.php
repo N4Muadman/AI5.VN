@@ -376,6 +376,55 @@
             -webkit-transform: translate(-50%, -50%);
             -o-transform: translate(-50%, -50%)
         }
+        .glass {
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .parallax-layer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Particle Explosion */
+        /* @keyframes particle-explode {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(0) rotate(180deg);
+                opacity: 0;
+            }
+        }
+
+        .exploding {
+            animation: particle-explode 0.5s ease-out forwards;
+        } */
+
+        /* Form Animation */
+        .form-appear {
+            animation: form-materialize 1s ease-out forwards;
+        }
+
+        @keyframes form-materialize {
+            0% {
+                transform: scale(0) rotate(180deg);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.1) rotate(0deg);
+                opacity: 0.8;
+            }
+            100% {
+                transform: scale(1) rotate(0deg);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
@@ -451,7 +500,7 @@
                 </div>
             </div>
 
-            <button
+            <button  onclick="showRegistrationForm()"
                 class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-6 px-16 rounded-full text-2xl transition-all duration-300 transform hover:scale-105 pulse-glow mb-4">
                 THAM GIA CUỘC CÁCH MẠNG
             </button>
@@ -867,7 +916,7 @@
                 <div class="text-yellow-400 font-bold text-xl">Tiết kiệm 9.000.000Đ - Chỉ còn 18 giờ!</div>
             </div>
 
-            <button
+            <button  onclick="showRegistrationForm()"
                 class="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-bold py-6 px-16 rounded-full text-2xl transition-all duration-300 transform hover:scale-105 pulse-glow mb-6">
                 THAM GIA CUỘC CÁCH MẠNG NGAY
             </button>
@@ -883,6 +932,37 @@
             </div>
         </div>
     </section>
+    <div id="registrationModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div id="registrationForm" class="glass neon-box rounded-2xl p-8 max-w-md w-full">
+            <h3 class="font-orbitron text-2xl font-bold text-center mb-6 gradient-text">ĐĂNG KÝ NGAY</h3>
+
+            <form class="space-y-4" action="{{route('course-register', $landingPage->id)}}" method="POST">
+                @csrf
+                <div>
+                    <input type="text" placeholder="Họ và tên *" required name="name"
+                           class="w-full bg-black/50 border border-cyan-500/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none">
+                </div>
+
+                <div>
+                    <input type="tel" placeholder="Số điện thoại *" required name="phone"
+                           class="w-full bg-black/50 border border-cyan-500/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none">
+                </div>
+
+                <div>
+                    <input type="email" placeholder="Email *" required name="email"
+                           class="w-full bg-black/50 border border-cyan-500/50 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-cyan-400 focus:outline-none">
+                </div>
+
+                <button type="submit" class="w-full scan-line pulse-btn bg-gradient-to-r from-yellow-500 to-orange-500 hover:from-yellow-600 hover:to-orange-600 text-black font-bold py-3 rounded-lg transition-all duration-300">
+                    GỬI ĐĂNG KÝ
+                </button>
+            </form>
+
+            <button onclick="closeRegistrationForm()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-2xl">
+                ×
+            </button>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @if (session('success'))
@@ -912,6 +992,31 @@
         </script>
     @endif
     <script>
+        function showRegistrationForm() {
+            const button = event.target;
+            const modal = document.getElementById('registrationModal');
+            const form = document.getElementById('registrationForm');
+
+            // Create explosion effect
+            button.classList.add('exploding');
+
+            setTimeout(() => {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+                form.classList.add('form-appear');
+            }, 500);
+        }
+
+        function closeRegistrationForm() {
+            const modal = document.getElementById('registrationModal');
+            const form = document.getElementById('registrationForm');
+
+            form.classList.remove('form-appear');
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }, 300);
+        }
         // Pre-Hero Animation
         document.addEventListener('DOMContentLoaded', function() {
             const preHero = document.getElementById('preHero');
@@ -922,14 +1027,14 @@
             // First typing animation
             const typed1 = new Typed('#oldSeo', {
                 strings: ['SEO TRUYỀN THỐNG...'],
-                typeSpeed: 100,
+                typeSpeed: 50,
                 showCursor: false,
                 onComplete: function() {
                     setTimeout(() => {
                         deadSeo.classList.remove('hidden');
                         const typed2 = new Typed('#deadSeo', {
                             strings: ['...ĐÃ CHẾT.'],
-                            typeSpeed: 100,
+                            typeSpeed: 50,
                             showCursor: false,
                             onComplete: function() {
                                 setTimeout(() => {
@@ -938,7 +1043,7 @@
                                         strings: [
                                             'CHÀO MỪNG BẠN ĐẾN VỚI CUỘC CHƠI MỚI: SEO AI.'
                                         ],
-                                        typeSpeed: 80,
+                                        typeSpeed: 40,
                                         showCursor: false,
                                         onComplete: function() {
                                             setTimeout(() => {
@@ -947,13 +1052,13 @@
                                                     .add(
                                                         'hidden'
                                                         );
-                                            }, 2000);
+                                            }, 500);
                                         }
                                     });
-                                }, 2000);
+                                }, 500);
                             }
                         });
-                    }, 2000);
+                    }, 500);
                 }
             });
         });
@@ -995,14 +1100,7 @@
 
         updateCountdown();
 
-        // CTA Button Actions
-        document.querySelectorAll('button').forEach(button => {
-            button.addEventListener('click', function(e) {
-                e.preventDefault();
-                alert(
-                    '🚀 Chức năng đăng ký sẽ được kích hoạt khi tích hợp với hệ thống thanh toán! Cảm ơn bạn đã quan tâm đến cuộc cách mạng SEO AI!');
-            });
-        });
+
 
         // Smooth reveal animations
         const revealObserver = new IntersectionObserver((entries) => {

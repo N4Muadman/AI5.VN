@@ -259,7 +259,7 @@
                 opacity: 1;
             }
         }
-        
+
         #button-contact-vr {
             position: fixed;
             bottom: 10px;
@@ -793,9 +793,9 @@
                 <div class="bg-gradient-to-r from-yellow-400/20 to-orange-500/20 border border-yellow-400/50 rounded-2xl p-8 max-w-2xl mx-auto">
                     <h3 class="text-2xl font-bold mb-4 gradient-text">🎁 NHẬN NGAY FILE PDF HOÀN CHỈNH</h3>
                     <p class="text-gray-300 mb-6">Bao gồm phân tích chi tiết từng niche, mức hoa hồng trung bình, và chiến lược tiếp cận</p>
-                    <button class="glow-button text-white px-8 py-3 rounded-full font-bold">
+                    <a href="https://zalo.me/g/otoevm317" class="glow-button text-white px-8 py-3 rounded-full font-bold">
                         📥 TẢI NGAY CHECKLIST 10 NICHE VÀNG
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>

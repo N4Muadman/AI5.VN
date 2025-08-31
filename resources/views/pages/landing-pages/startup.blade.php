@@ -526,13 +526,16 @@
                 <p class="text-2xl font-bold text-gray-700">MỖI KỲ LÂN ĐỀU BẮT ĐẦU TỪ MỘT Ý TƯỞNG.</p>
             </div>
 
-            <div class="grid lg:grid-cols-2 gap-12 items-center">
+            <div class="grid gap-12 items-center">
                 <div class="fade-in-up stagger-1">
                     <div class="video-container">
-                        <div class="video-placeholder" onclick="playVideo()">
+                        <div class="video-placeholder">
                             <div class="text-center">
-                                <div class="text-6xl mb-4">▶️</div>
-                                <div class="text-xl font-semibold">Xem Câu Chuyện Thành Công</div>
+                                <video width="640" height="360" controls autoplay muted loop>
+                                    <source src="/assets/video/video-1.mp4" type="video/mp4">
+                                </video>
+                                {{-- <div class="text-6xl mb-4">▶️</div>
+                                <div class="text-xl font-semibold">Xem Câu Chuyện Thành Công</div> --}}
                             </div>
                         </div>
                     </div>
@@ -559,6 +562,19 @@
                             đắn, đặt vào một hệ sinh thái đúng đắn, sẽ tạo ra một kỳ lân. <span class="gradient-text">Ý
                                 tưởng tiếp theo có thể là của bạn.</span>
                         </p>
+                    </div>
+                </div>
+                <div class="fade-in-up stagger-1">
+                    <div class="video-container">
+                        <div class="video-placeholder">
+                            <div class="text-center">
+                                <video width="640" height="360" controls autoplay muted loop>
+                                    <source src="/assets/video/video-2.mp4" type="video/mp4">
+                                </video>
+                                {{-- <div class="text-6xl mb-4">▶️</div>
+                                <div class="text-xl font-semibold">Xem Câu Chuyện Thành Công</div> --}}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -702,7 +718,7 @@
 
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-2">Email *</label>
-                        <input type="email" id="email" required  name="email"
+                        <input type="email" id="email" required name="email"
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all">
                     </div>
 
@@ -715,7 +731,8 @@
                             <p class="text-sm text-gray-500 mb-4">hoặc bấm để chọn tệp</p>
                             <p class="text-xs text-gray-400">(Tối đa 25MB. Chúng tôi khuyến khích một bản trình bày
                                 ngắn gọn, súc tích)</p>
-                            <input type="file" id="fileInput" accept=".pdf,.docx,.doc" name="file[]" class="hidden">
+                            <input type="file" id="fileInput" accept=".pdf,.docx,.doc" name="file[]"
+                                class="hidden">
                         </div>
                         <div id="fileInfo" class="mt-4 hidden">
                             <div class="bg-blue-50 p-4 rounded-lg">
@@ -967,7 +984,7 @@
         function playVideo() {
             alert(
                 '🎬 Video demo sẽ được phát tại đây. Đây là một minh chứng cho thấy hành trình từ ý tưởng đến startup thành công!'
-                );
+            );
         }
 
         // Close modal when clicking outside

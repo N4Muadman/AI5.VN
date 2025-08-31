@@ -1127,29 +1127,41 @@
         });
 
         // Counter Animation
-        function animateCounter(id, target, duration = 2000) {
-            const element = document.getElementById(id);
-            const start = 0;
-            const increment = target / (duration / 16);
-            let current = start;
+        function startCountdown(durationInSeconds) {
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            let remainingTime = durationInSeconds;
 
             const timer = setInterval(() => {
-                current += increment;
-                if (current >= target) {
-                    current = target;
+                if (remainingTime <= 0) {
                     clearInterval(timer);
+                    daysEl.textContent = "00";
+                    hoursEl.textContent = "00";
+                    minutesEl.textContent = "00";
+                    secondsEl.textContent = "00";
+                    return;
                 }
-                element.textContent = Math.floor(current).toLocaleString();
-            }, 16);
+
+                remainingTime--;
+
+                const days = Math.floor(remainingTime / (3600 * 24));
+                const hours = Math.floor((remainingTime % (3600 * 24)) / 3600);
+                const minutes = Math.floor((remainingTime % 3600) / 60);
+                const seconds = remainingTime % 60;
+
+                daysEl.textContent = String(days).padStart(2, '0');
+                hoursEl.textContent = String(hours).padStart(2, '0');
+                minutesEl.textContent = String(minutes).padStart(2, '0');
+                secondsEl.textContent = String(seconds).padStart(2, '0');
+            }, 1000);
         }
 
         // Start counters when page loads
         window.addEventListener('load', () => {
-            setTimeout(() => {
-                animateCounter('counter1', 3247);
-                animateCounter('counter2', 1500);
-                animateCounter('counter3', 4200);
-            }, 500);
+            startCountdown(46930);
         });
 
         // Countdown Timer

@@ -634,54 +634,19 @@
 
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="bg-gray-50 p-6 rounded-xl">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center">
-                            <span class="text-white font-bold">MH</span>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Minh Hoàng</h4>
-                            <p class="text-sm text-gray-600">CNTT - ĐH Bách Khoa</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic">"Từ việc không biết bắt đầu từ đâu đến hoàn thành KLTN điểm A. Khóa
-                        học này thực sự là game changer!"</p>
-                    <div class="flex text-yellow-400 mt-3">
-                        ⭐⭐⭐⭐⭐
-                    </div>
+                    <img src="/assets/images/feedback-1.jpg" alt="">
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-xl">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center">
-                            <span class="text-white font-bold">TL</span>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Thu Linh</h4>
-                            <p class="text-sm text-gray-600">ATTT - ĐH Công nghệ</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic">"Cách tiếp cận rất logic và dễ hiểu. Đặc biệt phần trích dẫn IEEE
-                        giúp mình tự tin hơn rất nhiều."</p>
-                    <div class="flex text-yellow-400 mt-3">
-                        ⭐⭐⭐⭐⭐
-                    </div>
+
+                    <img src="/assets/images/feedback-2.jpg" alt="">
                 </div>
 
                 <div class="bg-gray-50 p-6 rounded-xl">
-                    <div class="flex items-center space-x-3 mb-4">
-                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center">
-                            <span class="text-white font-bold">DK</span>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-900">Đức Khang</h4>
-                            <p class="text-sm text-gray-600">CNTT - ĐH Quốc gia</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-700 italic">"Template và quy trình rất chuẩn. Giờ viết báo cáo gì cũng áp dụng
-                        được, không chỉ riêng KLTN."</p>
-                    <div class="flex text-yellow-400 mt-3">
-                        ⭐⭐⭐⭐⭐
-                    </div>
+                    <img src="/assets/images/feedback-3.jpg" alt="">
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <img src="/assets/images/feedback-4.jpg" alt="">
                 </div>
             </div>
         </div>
