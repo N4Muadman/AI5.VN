@@ -14,10 +14,12 @@
     <meta name="language" content="vi" />
     <meta name="revisit-after" content="7 days" />
 
+    <link rel="shortcut icon" href="/logo.jpg" type="image/x-icon">
+
     <!-- Open Graph for Facebook & Social Media -->
     <meta property="og:title" content="Khóa Học MMO 5A - 5 Kỹ Năng Kiếm Tiền Online 2025 | AI5.VN" />
     <meta property="og:description" content="🚀 Mở khóa thu nhập thụ động với MMO 5A! Lộ trình DUY NHẤT dạy 5 kỹ năng: Ads, Affiliate, Automation, AI & Application. Bắt đầu sự nghiệp của bạn!" />
-    <meta property="og:image" content="https://ai5.vn/assets/images/mmo5a-banner.jpg" />
+    <meta property="og:image" content="https://ai5.vn/logo.jpg" />
     <meta property="og:url" content="https://ai5.vn/" />
     <meta property="og:type" content="website" />
 
@@ -25,7 +27,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Khóa Học MMO 5A - 5 Kỹ Năng Kiếm Tiền Online 2025" />
     <meta name="twitter:description" content="🚀 Mở khóa thu nhập thụ động với MMO 5A! Lộ trình DUY NHẤT dạy 5 kỹ năng: Ads, Affiliate, Automation, AI & Application. Bắt đầu sự nghiệp của bạn!" />
-    <meta name="twitter:image" content="https://ai5.vn/assets/images/mmo5a-banner.jpg" />
+    <meta name="twitter:image" content="https://ai5.vn/logo.jpg" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>

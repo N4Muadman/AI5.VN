@@ -1,2 +1,13 @@
 User-agent: *
-Disallow:
+
+Disallow: /admin/
+Disallow: /login
+Disallow: /register
+Disallow: /logout
+Disallow: /my-account/
+Disallow: /user/
+Disallow: /cart
+Disallow: /checkout
+Disallow: /order-received/
+
+Sitemap: https://ai5.vn/sitemap.xml
